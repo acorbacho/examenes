@@ -1,3 +1,4 @@
+.. _t3:
 Título 3
 ========
 
@@ -17,14 +18,14 @@ Link          http://www.google.com
 
 Contenido de la página. **Párrafo 4**.
 --------------------------------------
-.. Note:: CUIDADe.
-.. warning:: CUIDADe.
-.. figure:: /source/images/35135.jpg
+.. Note:: Hey, listen!
+.. warning:: Hey, listen!
+.. figure:: /images/35135.jpg
   :alt: Imagen de Link
-  :target: /source/images/35135.jpg
+  :target: ../_images/35135.jpg
 .. raw:: html
 
-  <a href="/source/images/35135.jpg" download>Descargar imagen</a>
+  <a href="../_images/35135.jpg" download>Descargar imagen</a>
 
 Contenido de la página. **Párrafo 5**.
 --------------------------------------

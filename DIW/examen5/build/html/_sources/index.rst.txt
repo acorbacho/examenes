@@ -36,3 +36,8 @@ Entre los juegos más populares de la serie se encuentran **The Legend of Zelda:
 
 **The Legend of Zelda** ha dejado una huella imborrable en la historia de los videojuegos y ha influenciado a muchas otras sagas y géneros, convirtiéndose en un icono de la cultura popular y un referente para los jugadores de todo el mundo.
 
+Más información
+---------------
+Para más información, consulta la sección de contenidos :ref:`t1`.
+
+Tambien puedes visitar la sección multimedia :ref:`t3`.
