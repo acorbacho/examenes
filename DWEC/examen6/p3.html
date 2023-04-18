@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Estimador de posición</title>
+</head>
+
+<body>
+  <h1>Estimador de posición</h1>
+  <div>
+    <button id="btn-estimar">Estimar mi posición</button>
+    <button id="btn-seguir">Sígueme</button>
+    <h2>Mi posición actual</h2>
+    <p id="coordenadas"></p>
+    <p id="altitud"></p>
+    <p id="precision"></p>
+    <a id="enlace-mapa" href="#"></a>
+    <h2>Histórico de posiciones</h2>
+    <ul id="historico"></ul>
+  </div>
+  <script src="p3.js"></script>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1,
+    div {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #333;
+      text-shadow: 1px 1px #fff;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px #fff;
+    }
+
+    span {
+      font-weight: bold;
+      color: #005eff;
+    }
+
+    /* Estilos para los bloques de información */
+    .info-block {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 1px 1px 5px #ccc;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+
+    /* Estilos para los botones */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #005eff;
+      border-radius: 5px;
+      box-shadow: 1px 1px 5px #ccc;
+      text-shadow: 1px 1px #333;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #0029ff;
+    }
+  </style>
+</body>
+
+</html>

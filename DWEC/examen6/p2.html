@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <title>Información del usuario</title>
+</head>
+
+<body>
+  <h1>Información del usuario</h1>
+  <p>Cual es la UAS (agente de usuario)? <span id="uas"></span></p>
+  <p>Cual es el sistema operativo del usuario? <span id="so"></span></p>
+  <p>Qué versión de navegador está utilizando (o renderizado HTML)? <span id="version"></span></p>
+  <p>Qué tamaño de memoria tiene el equipo? <span id="memoria"></span></p>
+  <p>Qué lenguaje es el predeterminado del usuario? <span id="lenguaje"></span></p>
+  <p>Estás cargando la página online o local (sin conexión)? <span id="conexion"></span></p>
+  <p>Se pueden mostrar documentos PDF? <span id="pdf"></span></p>
+  <p>Qué porcentaje de batería tiene su sistema? <span id="bateria"></span></p>
+  <p>Si está cargando (o no) <span id="cargando"></span></p>
+
+  <script src="p2.js"></script>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #333;
+      text-shadow: 1px 1px #fff;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px #fff;
+    }
+
+    span {
+      font-weight: bold;
+      color: #005eff;
+    }
+
+    /* Estilos para los bloques de información */
+    .info-block {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 1px 1px 5px #ccc;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+
+    /* Estilos para los botones */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #005eff;
+      border-radius: 5px;
+      box-shadow: 1px 1px 5px #ccc;
+      text-shadow: 1px 1px #333;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #0029ff;
+    }
+  </style>
+</body>
+
+</html>
