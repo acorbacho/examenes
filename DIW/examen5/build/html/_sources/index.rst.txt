@@ -40,4 +40,4 @@ Más información
 ---------------
 Para más información, consulta la sección de contenidos :ref:`t1`.
 
-Tambien puedes visitar la sección multimedia :ref:`t3`.
+También puedes visitar la sección multimedia :ref:`t3`.
