@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<style>
+  video {
+    width: 450px;
+  }
+
+  video::cue {
+    font-size: 1rem;
+    color: yellow;
+  }
+</style>
+
+<head>
+  <title>Página 5</title>
+</head>
+
+<body>
+  <h1>Audio y Video con Subtítulos</h1>
+
+  <h2>Audio</h2>
+  <audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+  </audio>
+
+  <h2>Video con Subtítulos</h2>
+  <video id="video" controls>
+    <source src="video.mp4" type="video/mp4">
+    <track src="subtitles.vtt" kind="subtitles" srclang="es" label="Español" default>
+  </video>
+</body>
+
+</html>

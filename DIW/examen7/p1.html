@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .general {
+    width: 800px;
+    height: 600px;
+  }
+</style>
+
+<head>
+  <title>Página 1</title>
+</head>
+
+<body>
+  <h1>Imagen 800x600</h1>
+  <figure>
+    <img src="imags/imagen1.jpg" alt="Imagen 800x600" class="general">
+    <figcaption>Imagen 800x600</figcaption>
+  </figure>
+
+  <h1>Revisa el formato de la imagen</h1>
+  <picture>
+    <source srcset="imags/imagen2.webp" type="image/webp">
+    <source srcset="imags/imagen2.jpg" type="image/jpeg">
+    <source srcset="imags/imagen2.png" type="image/png">
+    <img src="imags/imagen2.jpg" alt="Revisa el formato de la imagen">
+  </picture>
+
+  <h1>Imagen según el ancho de pantalla</h1>
+  <picture>
+    <source media="(min-width: 1px)" srcset="imags/imagen1.jpg">
+    <source media="(min-width: 350px)" srcset="imags/imagen1.jpg">
+    <source media="(min-width: 1024px)" srcset="imags/imagen1.jpg">
+    <img src="imags/imagen1.jpg" alt="Imagen según el ancho de pantalla">
+  </picture>
+</body>
+
+</html>

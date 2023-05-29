@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Página 4</title>
+  <style>
+    #canvas {
+      border: 5px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Lienzo para pintar</h1>
+  <canvas id="canvas" width="400" height="400"></canvas>
+  <p>
+    <label for="color">Selecciona un color:</label>
+    <input type="color" id="color" value="#000000">
+  </p>
+
+  <script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    var isDrawing = false;
+    var lastX = 0;
+    var lastY = 0;
+
+    canvas.addEventListener("mousedown", startDrawing);
+    canvas.addEventListener("mousemove", draw);
+    canvas.addEventListener("mouseup", stopDrawing);
+    canvas.addEventListener("mouseout", stopDrawing);
+
+    function startDrawing(event) {
+      isDrawing = true;
+      lastX = event.clientX - canvas.offsetLeft;
+      lastY = event.clientY - canvas.offsetTop;
+    }
+
+    function draw(event) {
+      if (!isDrawing) return;
+
+      var currentX = event.clientX - canvas.offsetLeft;
+      var currentY = event.clientY - canvas.offsetTop;
+
+      ctx.beginPath();
+      ctx.moveTo(lastX, lastY);
+      ctx.lineTo(currentX, currentY);
+      ctx.strokeStyle = document.getElementById("color").value;
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      lastX = currentX;
+      lastY = currentY;
+    }
+
+    function stopDrawing() {
+      isDrawing = false;
+    }
+  </script>
+</body>
+
+</html>
