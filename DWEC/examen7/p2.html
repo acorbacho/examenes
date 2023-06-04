@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chuck Norris Jokes & OpenWeather App</title>
+</head>
+
+<body>
+  <h1>Chuck Norris Jokes & OpenWeather</h1>
+
+  <div id="jokes">
+    <h2>Chuck Norris Jokes</h2>
+    <p id="joke"></p>
+    <button id="new-joke-btn">Obtener nuevo chiste</button>
+    <button id="ocultar" style="color: red;">Response info</button>
+    <div id="response-info" class="hidden">
+      <h3>Información de respuesta:</h3>
+      <p id="response-status"></p>
+      <p id="response-date"></p>
+    </div>
+  </div>
+
+  <div id="weather">
+    <h2>OpenWeather</h2>
+    <p id="weather-info"></p>
+    <p id="last-update"></p>
+  </div>
+  <script src="keys.js"></script>
+  <script src="p2_functions.js"></script>
+  <script src="p2_main.js"></script>
+</body>
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
+
+</html>
