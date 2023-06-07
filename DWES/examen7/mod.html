@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='es-ES'>
+
+<head>
+  <meta charset='UTF-8' />
+  <title>Viajes | Edición</title>
+</head>
+
+<body>
+  <button><a href="index.php">Página de inicio</a></button>
+  <!-- Formulario para añadir un nuevo viajero -->
+  <form action="edit.php" method="post">
+    <h3>Añadir nuevo viajero</h3>
+    <input type="hidden" name="accion" value="añadir">
+    <label>ID Viajero:</label>
+    <input type="text" name="id_viajero" required>
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+    <label>Apellido:</label>
+    <input type="text" name="apellido" required>
+    <label>Fecha de nacimiento:</label>
+    <input type="date" name="fecha_nacimiento" required>
+    <label>Nacionalidad:</label>
+    <input type="text" name="nacionalidad" required>
+    <button type="submit">Añadir</button>
+  </form>
+
+  <!-- Formulario para actualizar los datos de un viajero -->
+  <form action="edit.php" method="post">
+    <h3>Actualizar datos de un viajero</h3>
+    <input type="hidden" name="accion" value="actualizar">
+    <label>ID Viajero:</label>
+    <input type="text" name="id_viajero" required>
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+    <label>Apellido:</label>
+    <input type="text" name="apellido" required>
+    <button type="submit">Actualizar</button>
+  </form>
+
+  <!-- Formulario para borrar un registro de la tabla Viajeros -->
+  <form action="edit.php" method="post">
+    <h3>Borrar registro de la tabla Viajeros</h3>
+    <input type="hidden" name="accion" value="borrar">
+    <label>ID Viajero:</label>
+    <input type="text" name="id_viajero" required>
+    <button type="submit">Borrar</button>
+  </form>
+</body>
+
+</html>
